@@ -6,14 +6,12 @@ function selectItem(e) {
     e.preventDefault();
     removeBorder();
     removeShow();
-    console.log('click');
     // Add border to current tab
     this.classList.add('tab-border');
     // Grab content item from DOM
     const tabContentItem = document.querySelector(`#${this.id}-content`);
     // Add show class
     tabContentItem.classList.add('show');
-    console.log('id');
 }
 
 function removeBorder() {
